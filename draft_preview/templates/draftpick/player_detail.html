@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{{ player.name }}
+<img src="{{ MEDIA_URL }}{{ player.image_url }}" alt="" class='draft_player_img'>
+<div class="">
+  {{player.take}}
+</div>
+
+{% endblock %}

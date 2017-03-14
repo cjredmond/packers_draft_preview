@@ -1,10 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{{ player.name }}
-<img src="{{ MEDIA_URL }}{{ player.image_url }}" alt="" class='draft_player_img'>
-<div class="">
-  {{player.take}}
+<h2 class='centered'>Round {{ player.pick }}</h2>
+<h3 class='centered'>{{ player.name }} {{ player.position }} {{ player.school }}</h3>
+<div class="centered">
+  {% if player.prev_pick %}
+  <a href="{% url 'draftpick_detail_view' player.prev_pick.id %}" class='prev'>Prev</a>
+  {% endif %}
+  {% if player.next_pick %}
+  <a href="{% url 'draftpick_detail_view' player.next_pick.id %}" class='next'>Next</a>
+  {% endif %}
 </div>
+
+<div class="row">
+  <div class="col-md-3 red"></div>
+  <div class="col-md-6">
+    <img src="{{ MEDIA_URL }}{{ player.image_url }}" align='middle' alt="" class='draft_player_img'>
+
+    <div class="">
+      {{ player.take|linebreaks }}
+    </div>
+
+
+  </div>
+</div>
+
 
 {% endblock %}

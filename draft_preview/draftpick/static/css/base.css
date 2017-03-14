@@ -1,4 +1,16 @@
 .draft_player_img {
-  max-height: 50px;
-  max-width: 60px;
+  height: 300px;
+  width: 500px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.prev {
+
 }

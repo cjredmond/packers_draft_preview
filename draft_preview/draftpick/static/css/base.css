@@ -1,6 +1,6 @@
 .draft_player_img {
   height: 300px;
-  width: 500px;
+  width: 100%;
 }
 
 .centered {
@@ -12,5 +12,8 @@
 }
 
 .prev {
+}
 
+.take {
+  font-size: 18px;
 }

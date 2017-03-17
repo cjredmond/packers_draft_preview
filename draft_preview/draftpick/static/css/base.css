@@ -17,3 +17,64 @@
 .take {
   font-size: 18px;
 }
+
+.box {
+  width: 250px;
+  height: 395px;
+  background-color: black;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.box-top {
+  width: 250px;
+  height: 32px;
+  background-color: orange;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.box-main {
+  width: 250px;
+  height: 345px;
+  color: white;
+  padding-top: 5px;
+  font-family: helvetica;
+
+}
+
+.input-box {
+  width: 220px;
+  height: 30px;
+  background-color: black;
+  color: grey;
+  margin-top: 5px;
+  border: 1px solid #232323;
+}
+
+.input-box-big {
+  width: 220px;
+  height: 100px;
+  background-color: black;
+  color: grey;
+  border: 1px solid #232323;
+  margin-top: 5px;
+  padding-bottom: 75px;
+}
+
+.input-wrapper {
+}
+
+.chat-submit {
+  /*height: 23px;
+  width: 45px;*/
+  float: right;
+  text-align: center;
+}
+
+.contact-us {
+  color: white;
+  padding-top: 5px;
+}

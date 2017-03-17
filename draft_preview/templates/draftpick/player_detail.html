@@ -5,15 +5,15 @@
 <h3 class='centered'>{{ player.name }} {{ player.position }} {{ player.school }}</h3>
 <div class="centered">
   {% if player.prev_pick %}
-  <a href="{% url 'draftpick_detail_view' player.prev_pick.id %}" class='prev'>Prev</a>
+  <a style="font-size: 20px;" href="{% url 'draftpick_detail_view' player.prev_pick.id %}" class='prev'>Prev</a>
   {% endif %}
   {% if player.next_pick %}
-  <a href="{% url 'draftpick_detail_view' player.next_pick.id %}" class='next'>Next</a>
+  <a style="font-size: 20px;" href="{% url 'draftpick_detail_view' player.next_pick.id %}" class='next'>Next</a>
   {% endif %}
 </div>
 
 <div class="row">
-  <div class="col-md-3 red"></div>
+  <div class="col-md-3"></div>
   <div class="col-md-6">
     <img src="{{ MEDIA_URL }}{{ player.image_url }}" align='middle' alt="" class='draft_player_img'>
 
@@ -23,7 +23,7 @@
     </div>
 
   </div>
-  <div class="col-md-3 red"></div>
+  <div class="col-md-3"></div>
 </div>
 
 
